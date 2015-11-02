@@ -1,4 +1,3 @@
-
 <h3>category:<?php echo($category['Category']['name']); ?></h3>
 <hr>
 

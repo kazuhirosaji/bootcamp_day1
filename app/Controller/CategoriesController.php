@@ -12,7 +12,7 @@ class CategoriesController extends AppController {
         if (!$this->Category->exists($id)) {
             throw new NotFoundException(__('Invalid category'));
         }
-        $options = array('conditions' => array('Category.' . $this->Category->primaryKey => $id));
+        $options = array('conditions' => array('Category.id' => $id));
         $this->set('category', $this->Category->find('first', $options));
     }
 }
